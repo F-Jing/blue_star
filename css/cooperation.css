@@ -1,46 +1,46 @@
+*{
+  text-decoration: none;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
 .page-mainer {
   width: 100%;
   background: rgba(255, 255, 255, 1);
-  margin: 0 auto;
   font-size: 0px;
 }
 .banner-section{
-  width: 100%;
-  height: 380px;
-  background: url(./../images/blue-star/main.png) no-repeat;
-  background-size: 100% 380px;
+
 }
 
 .nav-section {
-  width: 100%;
   height: 57px;
   background: rgba(37, 34, 34, 1);
+}
+.nav-container{
+  width: 1240px;
+  margin: 0 auto;
 }
 
 .nav-list {
   width: 486px;
-  margin-top: 19px;
-  margin-left: 104px;
+  display: flex;
+  justify-content: space-between;
 }
-
-.nav-item {
-  height: 20px;
-  display: inline-block;
+.nav-item{
+  box-sizing: border-box;
+  height: 57px;
 }
-
+.nav-item:hover {
+  border-bottom: 3px solid rgba(15, 199, 0, 1);
+}
 .nav-item-link {
-  display: inline-block;
   font-size: 14px;
+  line-height: 57px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: rgba(255, 255, 255, 1);
-  line-height: 20px;
-  margin-right: 40px;
-}
-
-.nav-item-link:focus {
-  padding-bottom: 15px;
-  border-bottom: 3px solid rgba(15, 199, 0, 1);
 }
 
 .intro-section {
@@ -49,14 +49,12 @@
 }
 
 .intro-container {
-  width: 1000px;
-  height: 120px;
-  margin-left: 100px;
-  padding-top: 60px;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 60px 0px;
 }
 
 .intro-title {
-  height: 37px;
   font-size: 26px;
   font-family: PingFangSC-Semibold, PingFang SC;
   font-weight: 600;
@@ -66,7 +64,6 @@
 
 .intro-description {
   width: 1000px;
-  height: 72px;
   font-size: 18px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
@@ -76,8 +73,12 @@
 }
 
 .course-section {
-  height: 1008px;
   background: rgba(245, 245, 245, 1);
+}
+.course-container{
+  width: 1240px;
+  margin: 0 auto;
+  padding-bottom: 60px;
 }
 
 .course-title {
@@ -87,22 +88,19 @@
   color: rgba(51, 51, 51, 1);
   line-height: 37px;
   padding-top: 60px;
-  margin-left: 100px;
+  margin-bottom: -3px;
 }
 
 .course-list {
-  width: 1260px;
-  height: 372px;
-  margin: 0 auto;
-  font-size: 0px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
 }
 
 .course-item {
-  display: inline-block;
   width: 295px;
   height: 360px;
   background: rgba(255, 255, 255, 1);
-  margin: 17px 10px 0px 10px;
   position: relative;
 }
 
@@ -128,14 +126,14 @@
 }
 
 .course-tag {
+  width: 68px;
+  height: 26px;
   font-size: 12px;
+  line-height: 26px;
   font-family: PingFangSC-Medium, PingFang SC;
   font-weight: 500;
   color: rgba(51, 51, 51, 1);
-  line-height: 26px;
   text-align: center;
-  width: 68px;
-  height: 26px;
   background: rgba(255, 255, 255, 0.59);
   border-radius: 13px;
   position: absolute;
@@ -178,7 +176,6 @@
 }
 
 .course-note-container {
-  height: 20px;
   margin-top: 12px;
   margin-left: 25px;
   display: flex;
@@ -209,63 +206,47 @@
 }
 
 .lecturer-section {
-  height: 854px;
+  width: 1240px;
+  margin: 0 auto;
+  padding: 60px 0;
 }
-
 .lecturer-title {
   font-size: 26px;
   font-family: PingFangSC-Semibold, PingFang SC;
   font-weight: 600;
   color: rgba(51, 51, 51, 1);
   line-height: 37px;
-  padding-top: 60px;
-  margin: 0px 0px 14px 100px;
+  padding-bottom: 14px;
 }
 
 .lecturer-list {
-  width: 1240px;
-  height: 343px;
   background: rgba(245, 245, 245, 1);
-  margin: 20px auto;
   padding: 40px 60px;
-}
-
-.lecturer-list:nth-of-type(2) {
-  height: 295px;
+  margin-top: 20px;
 }
 
 .lecturer-item {
-  position: relative;
-  /* width: 1120px;
-  height: 263px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-
-.lecturer-item-img {
-  margin-top: 75px;
-  display: inline-block;
+.lecturer-text-container{
+  width: 966px;
 }
 
 .lecturer-item-name {
-  display: inline-block;
   font-size: 20px;
   font-family: PingFangSC-Semibold, PingFang SC;
   font-weight: 600;
   color: rgba(51, 51, 51, 1);
   line-height: 28px;
-  margin-left: 40px;
-  vertical-align: top;
 }
 
 .lecturer-item-text {
-  width: 966px;
-  height: 216px;
   font-size: 16px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
   color: rgba(51, 51, 51, 1);
   line-height: 24px;
-  margin: 19px 0px 0px 40px;
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
+  padding-top: 19px;
 }
