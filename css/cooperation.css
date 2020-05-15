@@ -1,28 +1,24 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
 .page-mainer {
-  width: 1440px;
-  height: 2539px;
+  width: 100%;
   background: rgba(255, 255, 255, 1);
   margin: 0 auto;
   font-size: 0px;
 }
+.banner-section{
+  width: 100%;
+  height: 380px;
+  background: url(./../images/blue-star/main.png) no-repeat;
+  background-size: 100% 380px;
+}
 
 .nav-section {
-  width: 1440px;
+  width: 100%;
   height: 57px;
   background: rgba(37, 34, 34, 1);
 }
 
 .nav-list {
-  display: inline-block;
   width: 486px;
-  height: 20px;
   margin-top: 19px;
   margin-left: 104px;
 }
@@ -240,8 +236,8 @@
 
 .lecturer-item {
   position: relative;
-  width: 1120px;
-  height: 263px;
+  /* width: 1120px;
+  height: 263px; */
 }
 
 .lecturer-item-img {
