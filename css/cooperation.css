@@ -115,8 +115,11 @@ body {
   background: rgba(255, 255, 255, 1);
   position: relative;
 }
-
-.course-new {
+.course-item-img{
+  width: 295px;
+  height: 170px;
+}
+.course-tag_new {
   width: 44px;
   height: 26px;
   background: rgba(15, 199, 0, 1);
@@ -132,13 +135,13 @@ body {
   top: 0px;
 }
 
-.course-rank {
+.course-tag_level {
   position: absolute;
   top: 0px;
   right: 10px;
 }
 
-.course-tag {
+.course-tag_claim {
   width: 68px;
   height: 26px;
   font-size: 12px;
@@ -154,11 +157,11 @@ body {
   top: 134px;
 }
 
-.course-tag:hover {
+.course-tag_claim:hover {
   background: rgba(255, 255, 255, 0.8);
 }
 
-.course-tag-two {
+.course-tag_claim-two {
   left: 99px;
 }
 
@@ -175,7 +178,7 @@ body {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, .1);
   }
 }
-.course-item-text {
+.course-item-title {
   width: 246px;
   font-size: 20px;
   font-weight: 600;
@@ -185,7 +188,7 @@ body {
   margin-left: 25px;
 }
 
-.course-item-subtext {
+.course-item-subtitle {
   width: 244px;
   font-size: 14px;
   font-family: PingFangSC-Regular, PingFang SC;
@@ -196,16 +199,23 @@ body {
   margin-left: 25px;
 }
 
-.course-note-container {
+.course-item-info {
   margin-top: 12px;
   margin-left: 25px;
   display: flex;
   align-items: center;
 }
 
-.icon-time {
+.have-icon:before {
+  content: "";
   width: 16px;
-  height: 16px;
+  height: 20px;
+  background: url(./../images/blue-star/time.png);
+  background-size: 16px 16px;
+  background-position: center;
+  display: block;
+  float: left;
+  background-repeat: no-repeat;
   margin-right: 8px;
 }
 
@@ -217,7 +227,6 @@ body {
 }
 
 .course-note {
-  height: 20px;
   font-size: 14px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
@@ -226,17 +235,17 @@ body {
   margin-right: 8px;
 }
 
-.lecturer-section {
+.teacher-section {
   background:rgba(255,255,255,1);
 }
 
-.lecturer-container {
+.teacher-container {
   width: 1240px;
   margin: 0 auto;
   padding: 60px 0;
 }
 
-.lecturer-title {
+.teacher-title {
   font-size: 26px;
   font-weight: 600;
   color: rgba(51, 51, 51, 1);
@@ -244,30 +253,30 @@ body {
   padding-bottom: 14px;
 }
 
-.lecturer-list {
+.teacher-list {
   background: rgba(245, 245, 245, 1);
   padding: 40px 60px;
   margin-top: 20px;
 }
 
-.lecturer-item {
+.teacher-item {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.lecturer-text-container {
+.teacher-item-content {
   width: 966px;
 }
 
-.lecturer-item-name {
+.teacher-item-name {
   font-size: 20px;
   font-weight: 600;
   color: rgba(51, 51, 51, 1);
   line-height: 28px;
 }
 
-.lecturer-item-text {
+.teacher-item-description {
   font-size: 16px;
   font-family: PingFangSC-Regular, PingFang SC;
   font-weight: 400;
